@@ -1,14 +1,12 @@
 import React from "react";
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 function TopNavbar() {
     return (
         <div>
-            <Container>
-                <Navbar expand="lg" variant="light" bg="light">
+                {/* <Navbar expand="lg" variant="light" bg="light">
                     <Nav variant="pills" defaultActiveKey="/home">
                         <Nav.Item>
                             <Nav.Link href="/home">Active</Nav.Link>
@@ -23,8 +21,15 @@ function TopNavbar() {
                             <Nav.Link eventKey="link-3">Option 3</Nav.Link>
                         </Nav.Item>
                     </Nav>
+                </Navbar> */}
+                <Navbar bg="dark" variant="dark">
+                    <Navbar.Brand href="#home">Merkraith's Dragon City Resource</Navbar.Brand>
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="#features">Features</Nav.Link>
+                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    </Nav>
                 </Navbar>
-            </Container>
         </div>
     );
 }

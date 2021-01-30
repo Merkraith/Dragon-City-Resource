@@ -1,9 +1,11 @@
 import React from "react";
-import Container from 'react-bootstrap/Container'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
 
-function Jumbotron() {
+function Introduction() {
     return (
         <div>
+            <Container>
             <Jumbotron fluid>
                 <Container>
                     <h1>Merkraith's Dragon City Resource</h1>
@@ -12,9 +14,10 @@ function Jumbotron() {
                     </p>
                 </Container>
             </Jumbotron>
+            </Container>
         </div>
     );
 }
 
-export default Jumbotron;
+export default Introduction;
 
